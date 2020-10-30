@@ -34,7 +34,7 @@ export default {
   spacings: {
     xxsmall: 8,
     xsmall: 16,
-    small: 24,
+    small: '24px',
     medium: 32,
     large: 40,
     xlarge: 48,

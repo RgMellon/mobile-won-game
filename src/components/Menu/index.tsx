@@ -7,10 +7,12 @@ import theme from 'src/styles/theme';
 
 import * as S from './styles';
 
-const Menu: React.FC = () => {
+const Menu = () => {
   return (
     <S.Container>
-      <Icon name="menu" size={24} color="#DADADA" />
+      <S.GoBack accessible={true} testID="menu" accessibilityLabel="Open Menu">
+        <Icon name="menu" size={24} color="#DADADA" />
+      </S.GoBack>
 
       <S.LogoWrapper>
         <Image source={logoImg} />

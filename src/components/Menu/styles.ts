@@ -28,3 +28,5 @@ export const LogoWrapper = styled.View`
 export const WrapperIcon = styled.View`
   margin-left: 20px;
 `;
+
+export const GoBack = styled.TouchableOpacity``;
