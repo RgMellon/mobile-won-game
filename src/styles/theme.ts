@@ -1,7 +1,7 @@
 export default {
   grid: {
     container: '130rem',
-    gutter: '3.2rem',
+    gutter: '32px',
   },
   border: {
     radius: '0.4rem',
@@ -13,12 +13,12 @@ export default {
     normal: 400,
     bold: 600,
     sizes: {
-      xsmall: '1.2rem',
-      small: '1.4rem',
-      medium: '1.6rem',
-      large: '1.8rem',
-      xlarge: '2.0rem',
-      xxlarge: '2.8rem',
+      xsmall: '12px',
+      small: '14px',
+      medium: '16px',
+      large: '18px',
+      xlarge: '20px',
+      xxlarge: '28px',
     },
   },
   colors: {
@@ -32,13 +32,13 @@ export default {
     darkGray: '#2E2F42',
   },
   spacings: {
-    xxsmall: 8,
-    xsmall: 16,
+    xxsmall: '8px',
+    xsmall: '16px',
     small: '24px',
-    medium: 32,
-    large: 40,
-    xlarge: 48,
-    xxlarge: 56,
+    medium: '32px',
+    large: '40px',
+    xlarge: '48px',
+    xxlarge: '56px',
   },
 
   layers: {

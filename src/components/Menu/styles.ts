@@ -7,7 +7,7 @@ export const Container = styled.View`
     padding-left: ${theme.spacings.small};
     padding-right: ${theme.spacings.small};
     position: relative;
-    margin-top: 20px;
+    margin-top: ${theme.spacings.xlarge};
   `}
 `;
 

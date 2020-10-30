@@ -1,11 +1,11 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { SafeAreaView, StatusBar, Text, View } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
 
-import Menu from './components/Menu';
+import Home from './pages/Index';
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <StatusBar
           barStyle="light-content"
-          backgroundColor={theme.colors.secondary}
+          backgroundColor={theme.colors.mainBg}
           translucent
         />
         <SafeAreaView
@@ -22,8 +22,7 @@ const App = () => {
             backgroundColor: theme.colors.mainBg,
           }}
         >
-          <Menu />
-          <Text> ooii</Text>
+          <Home />
         </SafeAreaView>
       </ThemeProvider>
     </>

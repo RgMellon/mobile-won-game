@@ -1,15 +1,14 @@
 import React from 'react';
+// import { fireEvent } from '@testing-library/react-native';
 import { renderWithTeme } from '../../test-utils';
 
 import Menu from '.';
 
-import theme from '../../styles/theme';
-import { ThemeContext } from 'styled-components/native';
-
 describe('<Menu />', () => {
   it('should render the menu', () => {
-    const { getByTestId } = renderWithTeme(<Menu />);
+    const { getByTestId, getByRole } = renderWithTeme(<Menu />);
 
     expect(getByTestId('menu')).toBeTruthy;
+    expect(getByRole('image'));
   });
 });

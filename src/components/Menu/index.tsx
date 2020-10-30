@@ -15,7 +15,11 @@ const Menu = () => {
       </S.GoBack>
 
       <S.LogoWrapper>
-        <Image source={logoImg} />
+        <Image
+          source={logoImg}
+          accessibilityRole="image"
+          accessibilityLabel="A game controll"
+        />
       </S.LogoWrapper>
 
       <S.MenuGroup>
