@@ -4,7 +4,7 @@ export default {
     gutter: '32px',
   },
   border: {
-    radius: '0.4rem',
+    radius: '4px',
   },
   font: {
     family:
