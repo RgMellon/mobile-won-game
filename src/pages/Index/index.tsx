@@ -3,12 +3,17 @@ import Home, { HomeTemplateProps } from '../../templates/Home';
 
 import bannerMock from '../../components/Banner/bannerMock';
 import gamesMock from '../../components/GameCardSlider/mock';
+import highlightMock from '../../components/Highlight/mock';
 
 export default function Index() {
-  const [home, setHome] = useState({
+  const [homeData, setHomeData] = useState({
     banners: bannerMock,
     newGames: gamesMock,
+    mostPopularHighLight: highlightMock[0],
+    mostPopularGames: gamesMock,
+    upcommingGames: gamesMock,
+    upcommingHighLights: highlightMock[1],
   });
 
-  return <Home banners={home.banners} newGames={home.newGames} />;
+  return <Home {...homeData} />;
 }

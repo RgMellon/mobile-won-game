@@ -11,7 +11,7 @@ const Heading = ({ children }: HeadingProps) => {
   return (
     <S.Container>
       <S.BorderLeft />
-      <S.Title> {children}</S.Title>
+      <S.Title accessibilityRole="text">{children}</S.Title>
     </S.Container>
   );
 };

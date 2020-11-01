@@ -6,7 +6,7 @@ const windowWidth = Dimensions.get('window').width;
 export const Container = styled.View`
   ${({ theme }) => css`
     position: relative;
-    width: ${windowWidth - 65};
+    width: ${windowWidth - 73};
     height: 250px;
     background-color: ${theme.colors.white};
     margin-right: 20px;

@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components/native';
 
+type HeadingProp = {
+  hasPedding: boolean;
+};
+
 export const Container = styled.ScrollView`
   flex: 1;
 `;
@@ -10,7 +14,7 @@ export const SectionBanner = styled.View`
   `}
 `;
 
-export const SectionNews = styled.View`
+export const Section = styled.View`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.medium};
     margin-bottom: ${theme.spacings.medium};
@@ -19,8 +23,23 @@ export const SectionNews = styled.View`
   `}
 `;
 
-export const WrapperHeading = styled.View`
+export const SectionMostPopular = styled.View`
   ${({ theme }) => css`
+    margin-top: ${theme.spacings.medium};
     margin-bottom: ${theme.spacings.medium};
+  `}
+`;
+
+export const WrapperHeading = styled.View<HeadingProp>`
+  ${({ theme, hasPedding }) => css`
+    margin-bottom: ${theme.spacings.medium};
+    padding-left: ${hasPedding ? theme.spacings.small : '0px'};
+  `}
+`;
+
+export const Content = styled.View`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.medium}
+    padding-left: ${theme.spacings.small};
   `}
 `;
