@@ -23,7 +23,7 @@ export const Section = styled.View`
   `}
 `;
 
-export const SectionMostPopular = styled.View`
+export const SectionFullWidth = styled.View`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.medium};
     margin-bottom: ${theme.spacings.medium};

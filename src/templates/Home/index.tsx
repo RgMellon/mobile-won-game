@@ -17,6 +17,8 @@ export type HomeTemplateProps = {
   mostPopularGames: CardProps[];
   upcommingGames: CardProps[];
   upcommingHighLights: HighlightProps;
+  upcommingMoreGames: CardProps[];
+  freeGamesHighLight: HighlightProps;
 };
 
 const Home = ({
@@ -26,6 +28,8 @@ const Home = ({
   mostPopularGames,
   upcommingGames,
   upcommingHighLights,
+  upcommingMoreGames,
+  freeGamesHighLight,
 }: HomeTemplateProps) => {
   return (
     <S.Container>
@@ -43,7 +47,7 @@ const Home = ({
         <GameCardSlider games={newGames} />
       </S.Section>
 
-      <S.SectionMostPopular>
+      <S.SectionFullWidth>
         <S.WrapperHeading hasPedding>
           <Heading>Most Populars</Heading>
         </S.WrapperHeading>
@@ -53,7 +57,7 @@ const Home = ({
         <S.Content>
           <GameCardSlider games={mostPopularGames} />
         </S.Content>
-      </S.SectionMostPopular>
+      </S.SectionFullWidth>
 
       <S.Section>
         <S.WrapperHeading hasPedding={false}>
@@ -63,9 +67,21 @@ const Home = ({
         <GameCardSlider games={upcommingGames} />
       </S.Section>
 
-      <S.SectionMostPopular>
+      <S.SectionFullWidth>
         <Highlight {...upcommingHighLights} />
-      </S.SectionMostPopular>
+
+        <S.Section>
+          <GameCardSlider games={upcommingMoreGames} />
+        </S.Section>
+      </S.SectionFullWidth>
+
+      <S.WrapperHeading hasPedding>
+        <Heading>Free Games</Heading>
+      </S.WrapperHeading>
+
+      <S.SectionFullWidth>
+        <Highlight {...freeGamesHighLight} />
+      </S.SectionFullWidth>
     </S.Container>
   );
 };

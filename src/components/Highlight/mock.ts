@@ -13,4 +13,11 @@ export default [
     backgroundImage: 'https://i.imgur.com/qZO9POZ.png',
     alignment: 'right',
   },
+  {
+    floatImage: 'https://i.imgur.com/9BPOpZv.png',
+    title: 'Read Dead is back!',
+    subtitle: 'Come see John’s new adventures',
+    backgroundImage: 'https://i.imgur.com/QckxqIO.png',
+    alignment: 'right',
+  },
 ];

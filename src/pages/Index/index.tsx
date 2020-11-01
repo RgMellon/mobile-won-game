@@ -13,6 +13,8 @@ export default function Index() {
     mostPopularGames: gamesMock,
     upcommingGames: gamesMock,
     upcommingHighLights: highlightMock[1],
+    upcommingMoreGames: gamesMock,
+    freeGamesHighLight: highlightMock[2],
   });
 
   return <Home {...homeData} />;
