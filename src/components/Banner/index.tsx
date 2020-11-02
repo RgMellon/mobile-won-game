@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
+import Button from '../Button';
+
 import * as S from './styles';
 
 export type BannerProps = {
@@ -21,6 +23,8 @@ const Banner = ({ image, title, subtitle }: BannerProps) => {
       <S.Caption>
         <S.Title>{title}</S.Title>
         <S.Subtitle>{subtitle}</S.Subtitle>
+
+        <Button>Buy Now </Button>
       </S.Caption>
     </S.Container>
   );

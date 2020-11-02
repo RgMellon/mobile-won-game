@@ -19,7 +19,7 @@ export const Content = styled.View``;
 
 export const ContentHeading = styled.View`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.small};
+    margin-top: ${theme.spacings.large};
     padding-left: ${theme.spacings.small};
     padding-right: ${theme.spacings.small};
   `}
