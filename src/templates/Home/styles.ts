@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components/native';
 
 type HeadingProp = {
   hasPedding: boolean;
+  marginBottom?: boolean;
 };
 
 export const Container = styled.ScrollView`
@@ -31,8 +32,8 @@ export const SectionFullWidth = styled.View`
 `;
 
 export const WrapperHeading = styled.View<HeadingProp>`
-  ${({ theme, hasPedding }) => css`
-    margin-bottom: ${theme.spacings.medium};
+  ${({ theme, hasPedding, marginBottom }) => css`
+    margin-bottom: ${marginBottom ? theme.spacings.medium : '0px'}
     padding-left: ${hasPedding ? theme.spacings.small : '0px'};
   `}
 `;

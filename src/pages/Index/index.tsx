@@ -15,6 +15,7 @@ export default function Index() {
     upcommingHighLights: highlightMock[1],
     upcommingMoreGames: gamesMock,
     freeGamesHighLight: highlightMock[2],
+    freeGames: gamesMock,
   });
 
   return <Home {...homeData} />;
