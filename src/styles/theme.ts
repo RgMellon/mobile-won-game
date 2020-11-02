@@ -18,7 +18,8 @@ export default {
       medium: '16px',
       large: '18px',
       xlarge: '20px',
-      xxlarge: '28px',
+      xxlarge: '24px',
+      xxxlarge: '28px',
     },
   },
   colors: {

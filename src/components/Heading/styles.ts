@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   ${({ theme }) => css`
-    /* padding-left: ${theme.spacings.small}; */
     flex-direction: row;
     align-items: center;
   `}
@@ -10,7 +9,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xlarge};
+    font-size: ${theme.font.sizes.xxlarge};
     color: ${theme.colors.lightGray};
   `}
 `;

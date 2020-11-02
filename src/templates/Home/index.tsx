@@ -41,53 +41,61 @@ const Home = ({
         <BannerSlider banners={banners} />
       </S.SectionBanner>
 
-      <S.Section>
-        <S.WrapperHeading hasPedding={false} marginBottom>
+      <S.Content>
+        <S.ContentHeading>
           <Heading>News</Heading>
-        </S.WrapperHeading>
+        </S.ContentHeading>
 
-        <GameCardSlider games={newGames} />
-      </S.Section>
+        <S.ContentCard>
+          <GameCardSlider games={newGames} />
+        </S.ContentCard>
+      </S.Content>
 
-      <S.WrapperHeading hasPedding>
-        <Heading>Most Populars</Heading>
-      </S.WrapperHeading>
+      <S.ContentFullWidth>
+        <S.ContentHeading>
+          <Heading>Most Populars</Heading>
+        </S.ContentHeading>
 
-      <S.SectionFullWidth>
-        <Highlight {...mostPopularHighLight} />
+        <S.ContentFullWidth>
+          <Highlight {...mostPopularHighLight} />
+        </S.ContentFullWidth>
 
-        <S.Content>
+        <S.ContentCard>
           <GameCardSlider games={mostPopularGames} />
-        </S.Content>
-      </S.SectionFullWidth>
+        </S.ContentCard>
+      </S.ContentFullWidth>
 
-      <S.Section>
-        <S.WrapperHeading hasPedding={false} marginBottom>
+      <S.Content>
+        <S.ContentHeading>
           <Heading>Up coming</Heading>
-        </S.WrapperHeading>
+        </S.ContentHeading>
 
-        <GameCardSlider games={upcommingGames} />
-      </S.Section>
+        <S.ContentCard>
+          <GameCardSlider games={upcommingGames} />
+        </S.ContentCard>
 
-      <S.SectionFullWidth>
-        <Highlight {...upcommingHighLights} />
+        <S.ContentFullWidth>
+          <Highlight {...upcommingHighLights} />
 
-        <S.Section>
-          <GameCardSlider games={upcommingMoreGames} />
-        </S.Section>
-      </S.SectionFullWidth>
+          <S.ContentCard>
+            <GameCardSlider games={upcommingMoreGames} />
+          </S.ContentCard>
+        </S.ContentFullWidth>
+      </S.Content>
 
-      <S.WrapperHeading hasPedding>
-        <Heading>Free Games</Heading>
-      </S.WrapperHeading>
+      <S.Content>
+        <S.ContentHeading>
+          <Heading>Free Games</Heading>
+        </S.ContentHeading>
 
-      <S.SectionFullWidth>
-        <Highlight {...freeGamesHighLight} />
+        <S.ContentFullWidth>
+          <Highlight {...freeGamesHighLight} />
+        </S.ContentFullWidth>
+      </S.Content>
 
-        <S.Section>
-          <GameCardSlider games={freeGames} />
-        </S.Section>
-      </S.SectionFullWidth>
+      <S.ContentCard>
+        <GameCardSlider games={freeGames} />
+      </S.ContentCard>
     </S.Container>
   );
 };

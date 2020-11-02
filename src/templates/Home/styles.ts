@@ -15,32 +15,27 @@ export const SectionBanner = styled.View`
   `}
 `;
 
-export const Section = styled.View`
+export const Content = styled.View``;
+
+export const ContentHeading = styled.View`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.medium};
-    margin-bottom: ${theme.spacings.medium};
+    margin-top: ${theme.spacings.small};
     padding-left: ${theme.spacings.small};
     padding-right: ${theme.spacings.small};
   `}
 `;
 
-export const SectionFullWidth = styled.View`
+export const ContentCard = styled.View`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.medium};
-    margin-bottom: ${theme.spacings.medium};
-  `}
-`;
-
-export const WrapperHeading = styled.View<HeadingProp>`
-  ${({ theme, hasPedding, marginBottom }) => css`
-    margin-bottom: ${marginBottom ? theme.spacings.medium : '0px'}
-    padding-left: ${hasPedding ? theme.spacings.small : '0px'};
-  `}
-`;
-
-export const Content = styled.View`
-  ${({ theme }) => css`
-    margin-top: ${theme.spacings.medium}
+    margin-top: ${theme.spacings.small};
     padding-left: ${theme.spacings.small};
+    padding-right: ${theme.spacings.small};
+  `}
+`;
+
+export const ContentFullWidth = styled.View`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.small};
+    /* margin-bottom: ${theme.spacings.small}; */
   `}
 `;
