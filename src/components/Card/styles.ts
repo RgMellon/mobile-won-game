@@ -7,7 +7,7 @@ export const Container = styled.View`
   ${({ theme }) => css`
     position: relative;
     width: ${windowWidth - 73};
-    height: 250px;
+    height: 270px;
     background-color: ${theme.colors.white};
     margin-right: 20px;
     border-radius: ${theme.border.radius};
@@ -43,14 +43,61 @@ export const Developer = styled.Text`
 `;
 
 export const Info = styled.View`
-  max-width: 80%;
+  width: 70%;
 `;
 
 export const Content = styled.View`
   ${({ theme }) => css`
-    justify-content: space-between;
+    flex-direction: row;
     position: relative;
-    height: 100%;
     margin: ${theme.spacings.xsmall};
+  `}
+`;
+
+export const FavContainer = styled.View`
+  width: 30%;
+  align-items: flex-end;
+`;
+
+export const FavButton = styled.TouchableOpacity`
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ContainerPrice = styled.View`
+  ${({ theme }) => css`
+    flex-direction: row;
+    padding-left: ${theme.spacings.small};
+    padding-right: ${theme.spacings.small};
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: -8px;
+  `}
+`;
+
+export const WrapperPrice = styled.View`
+  ${({ theme }) => css`
+    width: 78px;
+    height: 22px;
+    background: ${theme.colors.secondary};
+    border-radius: ${theme.border.radius}
+    justify-content: center;
+    align-items: center;
+  `}
+`;
+
+export const Price = styled.Text`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    font-size: ${theme.font.sizes.small};
+  `}
+`;
+
+export const PromotionalPrice = styled.Text`
+  ${({ theme }) => css`
+    color: ${theme.colors.gray};
+    text-decoration: line-through;
+    margin-right: ${theme.spacings.xsmall};
   `}
 `;
