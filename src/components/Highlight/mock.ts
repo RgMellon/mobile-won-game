@@ -4,7 +4,7 @@ export default [
     title: 'Read Dead is back!',
     subtitle: 'Come see John’s new adventures',
     backgroundImage: 'https://i.imgur.com/7d8Muzi.png',
-    alignment: 'left',
+    // alignment: 'left',
   },
   {
     floatImage: 'https://i.imgur.com/nWJYhtz.png',
@@ -20,4 +20,4 @@ export default [
     backgroundImage: 'https://i.imgur.com/QckxqIO.png',
     alignment: 'right',
   },
-];
+] as const;

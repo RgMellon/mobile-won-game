@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 
 import * as S from './styles';
 
@@ -9,7 +10,7 @@ export type HighlightProps = {
   floatImage?: string;
   // buttonLabel: string;
   // buttonLink: string;
-  alignment?: string;
+  alignment?: 'left' | 'right';
 };
 
 const Highlight = ({
@@ -29,6 +30,10 @@ const Highlight = ({
         <S.Content>
           <S.Title alignment={alignment}>{title}</S.Title>
           <S.Subtitle alignment={alignment}>{subtitle}</S.Subtitle>
+
+          <S.WrapperButton alignment={alignment}>
+            <Button> Buy Now </Button>
+          </S.WrapperButton>
         </S.Content>
       </S.Overlay>
     </S.Wrapper>

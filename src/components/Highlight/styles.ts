@@ -73,3 +73,9 @@ export const FloatImage = styled.Image`
     /* align-self: flex-start; */
   `}
 `;
+
+export const WrapperButton = styled.View<WrapperProps>`
+  ${({ alignment }) => css`
+    align-items: ${alignment === 'left' ? 'flex-end' : 'flex-start'};
+  `}
+`;

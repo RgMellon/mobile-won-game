@@ -16,7 +16,7 @@ export const Container = styled(RectButton)`
 
 export const TextButton = styled.Text`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.small};
     color: ${theme.colors.lightGray};
   `}
 `;
