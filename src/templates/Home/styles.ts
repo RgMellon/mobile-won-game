@@ -39,3 +39,7 @@ export const ContentFullWidth = styled.View`
     /* margin-bottom: ${theme.spacings.small}; */
   `}
 `;
+
+export const FooterContainer = styled.View`
+  ${({ theme }) => css``}
+`;

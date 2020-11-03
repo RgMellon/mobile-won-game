@@ -9,6 +9,7 @@ import Highlight, { HighlightProps } from '../../components/Highlight';
 
 import * as S from './styles';
 import { CardProps } from '../../components/Card';
+import Footer from '../../components/Footer';
 
 export type HomeTemplateProps = {
   banners: BannerProps[];
@@ -96,6 +97,10 @@ const Home = ({
       <S.ContentCard>
         <GameCardSlider games={freeGames} />
       </S.ContentCard>
+
+      <S.FooterContainer>
+        <Footer />
+      </S.FooterContainer>
     </S.Container>
   );
 };
