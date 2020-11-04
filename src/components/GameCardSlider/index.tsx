@@ -13,6 +13,7 @@ const GameCardSlider = ({ games }: GameCardSliders) => {
   return (
     <S.GameCardSlider
       horizontal={true}
+      testID="game-card-slider"
       data={games}
       showsHorizontalScrollIndicator={false}
       keyExtractor={(_, index) => index.toString()}
