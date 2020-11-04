@@ -11,10 +11,10 @@ export type BannerSliderProps = {
 const BannerSlider = ({ banners }: BannerSliderProps) => {
   return (
     <S.BannerSlide
+      testID="banner-slider"
       horizontal={true}
       data={banners}
-      // keyExtractor={provider => provider.id}
-
+      keyExtractor={(_, index) => index.toString()}
       renderItem={({ item: banner }) => <Banner {...banner} />}
     />
   );
