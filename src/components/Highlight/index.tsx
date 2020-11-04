@@ -23,9 +23,14 @@ const Highlight = ({
   return (
     <S.Wrapper source={{ uri: backgroundImage }}>
       <S.Overlay alignment={alignment}>
-        <S.WrapperImage>
-          {!!floatImage && <S.FloatImage source={{ uri: floatImage }} />}
-        </S.WrapperImage>
+        {!!floatImage && (
+          <S.WrapperImage testID="wrapper-image">
+            <S.FloatImage
+              accessibilityRole="image"
+              source={{ uri: floatImage }}
+            />
+          </S.WrapperImage>
+        )}
 
         <S.Content>
           <S.Title alignment={alignment}>{title}</S.Title>

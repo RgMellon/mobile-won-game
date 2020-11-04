@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components/native';
 
 import { Dimensions } from 'react-native';
-const windowWidth = Dimensions.get('window').width;
+const cardWidth = `${Dimensions.get('window').width - 73}px`;
 
 export const Container = styled.View`
   ${({ theme }) => css`
     position: relative;
-    width: ${windowWidth - 73};
+    width: ${cardWidth};
     height: 270px;
     background-color: ${theme.colors.white};
     margin-right: 20px;

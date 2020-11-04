@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components/native';
 
 import { Dimensions } from 'react-native';
-const windowWidth = Dimensions.get('window').width;
+const windowWidth = `${Dimensions.get('window').width}px`;
 
 export const Container = styled.View``;
 
 export const Image = styled.ImageBackground`
   ${({ theme }) => css`
-    width: ${windowWidth} + 'px';
+    width: ${windowWidth};
     height: 230px;
     background-color: ${theme.colors.lightGray};
   `}
