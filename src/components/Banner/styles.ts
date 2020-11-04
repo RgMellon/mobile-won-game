@@ -3,15 +3,11 @@ import styled, { css } from 'styled-components/native';
 import { Dimensions } from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 
-export const Container = styled.View`
-  /* width: 100%; */
-  /* background: red; */
-  /* flex: 1; */
-`;
+export const Container = styled.View``;
 
 export const Image = styled.ImageBackground`
   ${({ theme }) => css`
-    width: ${windowWidth};
+    width: ${windowWidth} + 'px';
     height: 230px;
     background-color: ${theme.colors.lightGray};
   `}

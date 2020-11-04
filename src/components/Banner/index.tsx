@@ -19,9 +19,9 @@ export type BannerProps = {
 const Banner = ({ image, title, subtitle }: BannerProps) => {
   return (
     <S.Container>
-      <S.Image source={{ uri: image }} />
+      <S.Image accessibilityRole="image" source={{ uri: image }} />
       <S.Caption>
-        <S.Title>{title}</S.Title>
+        <S.Title accessibilityRole="text">{title}</S.Title>
         <S.Subtitle>{subtitle}</S.Subtitle>
 
         <Button>Buy Now </Button>
