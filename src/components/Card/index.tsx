@@ -28,17 +28,17 @@ const Card = ({
   }, []);
 
   return (
-    <S.Container>
+    <S.Container testID="game-card">
       {!!ribbon && <Ribbon color={ribbonColor}>{ribbon}</Ribbon>}
 
       <S.ImageBox>
-        <S.Image source={{ uri: image }} />
+        <S.Image accessibilityRole="image" source={{ uri: image }} />
       </S.ImageBox>
 
       <S.Content>
         <S.Info>
-          <S.Title>{title}</S.Title>
-          <S.Developer>{developer}</S.Developer>
+          <S.Title testID="title-card">{title}</S.Title>
+          <S.Developer testID="developer-card">{developer}</S.Developer>
         </S.Info>
 
         <S.FavContainer>
@@ -49,7 +49,11 @@ const Card = ({
       </S.Content>
 
       <S.ContainerPrice>
-        {!!promotionalPrice && <S.PromotionalPrice>{price}</S.PromotionalPrice>}
+        {!!promotionalPrice && (
+          <S.PromotionalPrice testID="promotional-price">
+            {price}
+          </S.PromotionalPrice>
+        )}
         <S.WrapperPrice>
           <S.Price> {promotionalPrice || price} </S.Price>
         </S.WrapperPrice>

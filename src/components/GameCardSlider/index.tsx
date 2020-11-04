@@ -15,8 +15,7 @@ const GameCardSlider = ({ games }: GameCardSliders) => {
       horizontal={true}
       data={games}
       showsHorizontalScrollIndicator={false}
-      // keyExtractor={provider => provider.id}
-
+      keyExtractor={(_, index) => index.toString()}
       renderItem={({ item: gameCard }) => <Card {...gameCard} />}
     />
   );
