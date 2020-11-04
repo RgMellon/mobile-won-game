@@ -7,9 +7,7 @@ import Heading from '.';
 
 describe('<Heading />', () => {
   it('should render the Heading', () => {
-    const { getByRole, getByTestId, debug } = renderWithTeme(
-      <Heading>Won Games</Heading>,
-    );
+    const { getByRole } = renderWithTeme(<Heading>Won Games</Heading>);
 
     expect(getByRole('text').children[0]).toEqual('Won Games');
   });

@@ -10,8 +10,8 @@ type ButtonProperties = {
 
 const Button = ({ children, ...rest }: ButtonProperties) => {
   return (
-    <S.Container {...rest}>
-      <S.TextButton>{children}</S.TextButton>
+    <S.Container {...rest} testID="button">
+      <S.TextButton accessibilityRole="text">{children}</S.TextButton>
     </S.Container>
   );
 };
