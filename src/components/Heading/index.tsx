@@ -21,7 +21,7 @@ const Heading = ({ children, lineBottom, color = 'white' }: HeadingProps) => {
       <S.Title color={color} accessibilityRole="text">
         {children}
       </S.Title>
-      {!!lineBottom && <S.BorderBottom />}
+      {!!lineBottom && <S.BorderBottom testID="border-bottom" />}
     </S.Container>
   );
 };
