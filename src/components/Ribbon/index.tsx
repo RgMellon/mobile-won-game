@@ -13,7 +13,7 @@ const Ribbon = ({ children, color = 'primary' }: RibbonPros) => (
   <>
     <S.Wrapper color={color} testID="ribbon">
       <S.RibbonDetail color={color} />
-      <S.TextContent> {children} </S.TextContent>
+      <S.TextContent accessibilityRole="text"> {children} </S.TextContent>
     </S.Wrapper>
   </>
 );
