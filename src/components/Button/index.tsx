@@ -4,13 +4,14 @@ import { RectButtonProperties } from 'react-native-gesture-handler';
 
 import * as S from './styles';
 
-type ButtonProperties = {
+export type ButtonProperties = {
   children: string;
+  fullWidth?: boolean;
 } & RectButtonProperties;
 
-const Button = ({ children, ...rest }: ButtonProperties) => {
+const Button = ({ children, fullWidth = false, ...rest }: ButtonProperties) => {
   return (
-    <S.Container {...rest} testID="button">
+    <S.Container fullWidth={fullWidth} {...rest} testID="button">
       <S.TextButton accessibilityRole="text">{children}</S.TextButton>
     </S.Container>
   );

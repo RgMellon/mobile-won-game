@@ -1,15 +1,18 @@
 import styled, { css } from 'styled-components/native';
 
 import { RectButton } from 'react-native-gesture-handler';
+import { ButtonProperties } from '.';
 
-export const Container = styled(RectButton)`
-  ${({ theme }) => css`
+type ButtonPropStyles = Pick<ButtonProperties, 'fullWidth'>;
+
+export const Container = styled(RectButton)<ButtonPropStyles>`
+  ${({ theme, fullWidth }) => css`
     border-radius: ${theme.border.radius};
     align-items: center;
     justify-content: center;
     background: ${theme.colors.primary}
     height: 40px;
-    width: 127px;
+    width: ${fullWidth ? '100%' : '127px'};
     padding: ${theme.spacings.xxsmall} ${theme.spacings.small};
   `}
 `;

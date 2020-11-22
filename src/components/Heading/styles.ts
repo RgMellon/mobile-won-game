@@ -1,7 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components/native';
 import { HeadingProps } from '.';
 
-type TitleHeadingProps = Pick<HeadingProps, 'color'>;
+type TitleHeadingProps = Pick<HeadingProps, 'color' | 'size'>;
 
 const titleModifier = {
   black: (theme: DefaultTheme) => css`
@@ -10,6 +10,14 @@ const titleModifier = {
 
   white: (theme: DefaultTheme) => css`
     color: ${theme.colors.white};
+  `,
+
+  large: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.xxlarge};
+  `,
+
+  medium: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.large};
   `,
 };
 
@@ -22,10 +30,11 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text<TitleHeadingProps>`
-  ${({ theme, color }) => css`
-    font-size: ${theme.font.sizes.large};
-    ${!!color && titleModifier[color!](theme)}}};
+  ${({ theme, color, size }) => css`
+    font-weight: bold;
 
+    ${!!color && titleModifier[color!](theme)};
+    ${!!size && titleModifier[size!](theme)};
   `}
 `;
 

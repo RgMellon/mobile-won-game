@@ -65,4 +65,9 @@ O projeto foi feito utilizando das seguines tecnologias
 
 ---
 
+TODO
+
+[ ] Testar BTN Full width
+[ ] Testar sizes heading
+
 Desenvolvido com ♥ por Renan Melo

@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
 
 import Home from './pages/Index';
+import SignIn from './pages/SignIn';
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
             backgroundColor: theme.colors.mainBg,
           }}
         >
-          <Home />
+          <SignIn />
         </SafeAreaView>
       </ThemeProvider>
     </>
