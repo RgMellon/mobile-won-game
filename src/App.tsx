@@ -2,31 +2,25 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
 import { ThemeProvider } from 'styled-components';
-import theme from './styles/theme';
 
-import Home from './pages/Index';
-import SignIn from './pages/SignIn';
+import theme from './styles/theme';
+import Routes from './routes';
 
 const App = () => {
   return (
-    <>
+    <NavigationContainer>
       <ThemeProvider theme={theme}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={theme.colors.mainBg}
           translucent
         />
-        <SafeAreaView
-          style={{
-            flex: 1,
-            backgroundColor: theme.colors.mainBg,
-          }}
-        >
-          <SignIn />
-        </SafeAreaView>
+
+        <Routes />
       </ThemeProvider>
-    </>
+    </NavigationContainer>
   );
 };
 

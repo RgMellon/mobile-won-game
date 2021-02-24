@@ -19,14 +19,16 @@ const titleModifier = {
   medium: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.large};
   `,
+
+  small: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.small};
+  `,
 };
 
 export const Container = styled.View`
-  ${({ theme }) => css`
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  `}
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 `;
 
 export const Title = styled.Text<TitleHeadingProps>`
