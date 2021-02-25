@@ -1,6 +1,8 @@
 import 'react-native-gesture-handler';
+export { default } from '../storybook';
+
 import React from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { ThemeProvider } from 'styled-components';
