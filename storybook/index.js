@@ -1,20 +1,29 @@
 import { AppRegistry } from 'react-native';
-
+import { loadStories } from './storyLoader';
+import theme from '../src/styles/theme';
 import {
   getStorybookUI,
   configure,
   addDecorator,
+  addParameters,
 } from '@storybook/react-native';
 import { withKnobs } from '@storybook/addon-knobs';
+import { withTheme } from 'storybook-addon-ondevice-styled-theme';
 
 import './rn-addons';
 
 // enables knobs for all stories
 addDecorator(withKnobs);
+addDecorator(withTheme);
+
+addParameters({
+  themes: [theme],
+});
 
 // import stories
 configure(() => {
-  require('./stories');
+  loadStories();
+  // require('./stories');
 }, module);
 
 // Refer to https://github.com/storybookjs/storybook/tree/master/app/react-native#start-command-parameters

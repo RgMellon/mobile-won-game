@@ -10547,6 +10547,11 @@ prettier@^2.0.2, prettier@^2.1.2:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"
   integrity sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
 
+prettier@^2.0.5:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
+  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
+
 pretty-error@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.1.2.tgz#be89f82d81b1c86ec8fdfbc385045882727f93b6"
@@ -11071,6 +11076,17 @@ react-native-screens@^2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.17.1.tgz#c3c0ac750af48741c5b1635511e6af2a27b74309"
   integrity sha512-B4gD5e4csvlVwlhf+RNqjQZ9mHTwe/iL3rXondgZxnKz4oW0QAmtLnLRKOrYVxoaJaF9Fy7jhjo//24/472APQ==
+
+react-native-storybook-loader@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-2.0.2.tgz#04890f0f28dd861fc6eb55c2bb3284c62418fcb5"
+  integrity sha512-p39ezu9v3YMQTMuX4x1qxRkAkrB/rmdxUXD0yM0kHoecXita1e+IJD8ZAN1Ulv5HVa91MUtHDXjaMTxinTQPcA==
+  dependencies:
+    colors "^1.1.2"
+    find-up "^4.1.0"
+    glob "^7.1.1"
+    prettier "^2.0.5"
+    yargs "^15.4.1"
 
 react-native-swipe-gestures@^1.0.4:
   version "1.0.5"
@@ -12227,6 +12243,11 @@ store2@^2.7.1:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
+
+storybook-addon-ondevice-styled-theme@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/storybook-addon-ondevice-styled-theme/-/storybook-addon-ondevice-styled-theme-0.0.1.tgz#9f6f065a9ec5fe8200566fa6a035abd14d42390b"
+  integrity sha512-LdNet2WjArmJEuZKt9x+pBkN47nADpmtY24/IStnbPH3TQi25O5632G2ewlTYI58mlTUngrt/aPe9UlZHzTMCg==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
