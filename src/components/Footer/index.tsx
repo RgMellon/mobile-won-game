@@ -12,7 +12,7 @@ const Footer = () => {
         <S.LogoFooter source={logoFooter} />
         <S.Row>
           <S.Column>
-            <Heading color="black" size="small" lineBottom>
+            <Heading color="black" size="medium" lineBottom>
               Contact
             </Heading>
 
@@ -24,7 +24,7 @@ const Footer = () => {
           </S.Column>
 
           <S.Column>
-            <Heading color="black" size="small" lineBottom>
+            <Heading color="black" size="medium" lineBottom>
               Follow us
             </Heading>
 
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <S.Row>
           <S.Column>
-            <Heading color="black" size="small" lineBottom>
+            <Heading color="black" size="medium" lineBottom>
               Links
             </Heading>
 
@@ -52,7 +52,7 @@ const Footer = () => {
           </S.Column>
 
           <S.Column>
-            <Heading color="black" size="small" lineBottom>
+            <Heading color="black" size="medium" lineBottom>
               Location
             </Heading>
 
