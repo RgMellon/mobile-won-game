@@ -6,11 +6,13 @@
 function loadStories() {
   require('../src/components/Footer/footer.stories');
   require('../src/components/GameInfo/game-info.stories');
+  require('../src/components/TextContent/text-content.stories');
 }
 
 const stories = [
   '../src/components/Footer/footer.stories',
   '../src/components/GameInfo/game-info.stories',
+  '../src/components/TextContent/text-content.stories',
 ];
 
 module.exports = {
